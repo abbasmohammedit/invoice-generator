@@ -11,7 +11,9 @@ jobs:
       - run:
           name: "Install Dependencies"
           command: npm install
-      
+      - run:
+          name: "Install Oudated Dependencies"
+          command: npx browserslist@latest --update-db
       - run:
           name: "Build"
           command: npm run build
